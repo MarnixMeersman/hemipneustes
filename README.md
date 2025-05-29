@@ -3,6 +3,10 @@
 
 This project contains an R script developed as part of an internship at the **Natural History Museum of Maastricht**. The script performs statistical analysis of the morphological traits of the sea urchin genus *Hemipneustes*, comparing data across different geological time periods.
 
+## Access the Script
+The script can be accessed here and downloaded into your R environment. 
+➡️ [Script_Hemipneustes.R](./Script_Hemipneustes.R)
+
 ## Features
 - **Data Loading and Preprocessing**: Reads Excel files, filters data, and computes derived variables for analysis.
 - **Principal Component Analysis (PCA)**: Identifies key patterns and variations in the data.
@@ -36,9 +40,6 @@ To use the script, ensure you have the following installed:
 
 4. **Explore Results**:  
    Check the PCA plots and summary statistics to gain insights into the morphological traits of *Hemipneustes* and their variations across time periods.
-
-## Access the Script
-➡️ [Script_Hemipneustes.R](./Script_Hemipneustes.R)
 
 ## Customization
 You can adapt the script to:
