@@ -100,7 +100,7 @@ pca_vars <- data_pca %>%
          angle_rad)
 
 # --- Run PCA ---
-library(FactoMineR)
+
 library(factoextra)
 
 pca_model_all <- PCA(pca_vars, graph = FALSE, ncp = 5)
@@ -111,7 +111,7 @@ data_pca$PC2 <- pca_model_all$ind$coord[, 2]
 data_pca$PC3 <- pca_model_all$ind$coord[, 3] 
 data_pca$PC4 <- pca_model_all$ind$coord[, 4]
 # --- Plot PCA with Echinocorys included ---
-library(ggplot2)
+
 
 ggplot(data_pca, aes(x = PC1, y = PC2, color = Group, shape = Group)) +
   geom_point(size = 3, alpha = 0.8) +
@@ -131,7 +131,6 @@ ggplot(data_pca, aes(x = PC3, y = PC4, color = Group, shape = Group)) +
 
 
 
-library(dplyr) 
 explained_var <- vis.pca$eig[, 2]
 names(explained_var) <- paste0("PC", 1:length(explained_var))
 print("Percentage of variance explained:")
@@ -179,7 +178,7 @@ pc_separation
 # Load libraries
 library(tidyverse)
 library(geomorph)
-
+library(Morpho)
 
 # Define path to your landmark CSV files
 file_paths <- list.files("C:/Users/mauri/Downloads/Master documenten", pattern = "\\.csv$", full.names = TRUE)
@@ -244,7 +243,7 @@ plot(gpa$Csize,test2$CACscores)
 
 
 # Compute variance within each group
-library(dplyr)
+
 
 pca_scores %>%
   group_by(Group) %>%
