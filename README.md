@@ -3,8 +3,7 @@
 
 This project contains an R script developed as part of an internship at the **Natural History Museum of Maastricht**. The script performs statistical analysis of the morphological traits of the sea urchin genus *Hemipneustes*, comparing data across different geological time periods.
 
-## Access the Script
-The script can be accessed here and downloaded into your R environment. 
+## Access the Script here
 ➡️ [Script_Hemipneustes.R](./Script_Hemipneustes.R)
 
 ## Features
